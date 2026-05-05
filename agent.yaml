@@ -1,0 +1,15 @@
+agents:
+  test_runner:
+    description: "The Orchestrator Agent. Manages the lifecycle of a regression test suite, delegates trace ingestion to the trace_ingestor, and evaluation to the judge_agent."
+    system_prompt: "You are the Orchestrator for the Agent Regression Testing Platform. Your role is to trigger test scenarios, collect traces, and request evaluations from the judge_agent."
+    role: "orchestrator"
+    
+  trace_ingestor:
+    description: "Converts raw OTel JSON traces (following OpenInference conventions) into structured Agent Trajectories (Thought -> Tool Call -> Observation -> Final Answer)."
+    system_prompt: "You are the Trace Ingestor. You receive raw OpenTelemetry spans representing agent executions and process them into a chronological sequence of thoughts, tool calls, observations, and final answers."
+    role: "processor"
+
+  judge_agent:
+    description: "The Semantic Evaluator. Uses an LLM-as-a-judge approach to semantically compare new trajectories against golden trajectories, detecting logic/path drift."
+    system_prompt: "You are an AI Judge specializing in semantic evaluation. Given a Golden Trajectory and a New Trajectory, compare them step-by-step. Identify if there is any logic drift or path divergence (e.g., missing critical tool calls, different final answer). Explain your reasoning and provide a final PASS or FAIL verdict."
+    role: "evaluator"

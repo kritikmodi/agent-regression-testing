@@ -1,0 +1,130 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agent Regression Test Results</title>
+        <style>
+            body { font-family: 'Inter', sans-serif; background-color: #f4f4f9; color: #333; margin: 0; padding: 20px; }
+            .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+            h1 { text-align: center; color: #222; }
+            .summary { display: flex; justify-content: space-around; margin-bottom: 20px; }
+            .summary-card { padding: 15px; border-radius: 6px; text-align: center; width: 30%; }
+            .summary-card.total { background: #e0e7ff; color: #3730a3; }
+            .summary-card.passed { background: #dcfce7; color: #166534; }
+            .summary-card.failed { background: #fee2e2; color: #991b1b; }
+            table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+            th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+            th { background-color: #f8f9fa; }
+            .pass { color: green; font-weight: bold; }
+            .fail { color: red; font-weight: bold; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Test Run Results</h1>
+            <p style="text-align:center;">2026-05-01 05:28:25</p>
+            
+            <div class="summary">
+                <div class="summary-card total">
+                    <h3>Total</h3>
+                    <p>10</p>
+                </div>
+                <div class="summary-card passed">
+                    <h3>Passed</h3>
+                    <p>6</p>
+                </div>
+                <div class="summary-card failed">
+                    <h3>Failed</h3>
+                    <p>4</p>
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Scenario Name</th>
+                        <th>Status</th>
+                        <th>Score</th>
+                        <th>Reasoning</th>
+                    </tr>
+                </thead>
+                <tbody>
+    
+                    <tr>
+                        <td>Scenario_1</td>
+                        <td class="pass">PASS</td>
+                        <td>1.00</td>
+                        <td>Trajectories match semantically.</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Scenario_2</td>
+                        <td class="pass">PASS</td>
+                        <td>1.00</td>
+                        <td>Trajectories match semantically.</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Scenario_3</td>
+                        <td class="fail">FAIL</td>
+                        <td>0.00</td>
+                        <td>Trajectory drift detected (Score: 0.00)! Golden called ['check_inventory'], but New called ['get_order_status'].</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Scenario_4</td>
+                        <td class="pass">PASS</td>
+                        <td>1.00</td>
+                        <td>Trajectories match semantically.</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Scenario_5</td>
+                        <td class="fail">FAIL</td>
+                        <td>0.00</td>
+                        <td>Trajectory drift detected (Score: 0.00)! Golden called ['check_inventory'], but New called ['get_order_status'].</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Scenario_6</td>
+                        <td class="pass">PASS</td>
+                        <td>1.00</td>
+                        <td>Trajectories match semantically.</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Scenario_7</td>
+                        <td class="pass">PASS</td>
+                        <td>1.00</td>
+                        <td>Trajectories match semantically.</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Scenario_8</td>
+                        <td class="fail">FAIL</td>
+                        <td>0.00</td>
+                        <td>Trajectory drift detected (Score: 0.00)! Golden called ['get_user_info'], but New called ['get_order_status'].</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Scenario_9</td>
+                        <td class="pass">PASS</td>
+                        <td>1.00</td>
+                        <td>Trajectories match semantically.</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Scenario_10</td>
+                        <td class="fail">FAIL</td>
+                        <td>0.50</td>
+                        <td>Trajectories match semantically. Final answers differ: Golden='Final Answer: Completed Scenario_10 successfully.', New='Final Answer: Failed Scenario_10.'.</td>
+                    </tr>
+        
+                </tbody>
+            </table>
+        </div>
+    </body>
+    </html>
+    

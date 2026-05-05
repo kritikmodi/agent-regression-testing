@@ -1,0 +1,252 @@
+[
+  {
+    "scenario_name": "Scenario_1",
+    "spans": [
+      {
+        "attributes": {
+          "openinference.span.kind": "LLM",
+          "output.value": "Thinking differently about Scenario_1."
+        }
+      },
+      {
+        "attributes": {
+          "openinference.span.kind": "TOOL",
+          "tool.name": "check_inventory",
+          "input.value": "{\"item_id\": \"item_123\"}",
+          "output.value": "Tool success"
+        }
+      },
+      {
+        "attributes": {
+          "openinference.span.kind": "LLM",
+          "output.value": "Final Answer: Completed Scenario_1 successfully."
+        }
+      }
+    ]
+  },
+  {
+    "scenario_name": "Scenario_2",
+    "spans": [
+      {
+        "attributes": {
+          "openinference.span.kind": "LLM",
+          "output.value": "Thinking differently about Scenario_2."
+        }
+      },
+      {
+        "attributes": {
+          "openinference.span.kind": "TOOL",
+          "tool.name": "get_user_info",
+          "input.value": "{\"user_id\": \"user_1\"}",
+          "output.value": "Tool success"
+        }
+      },
+      {
+        "attributes": {
+          "openinference.span.kind": "LLM",
+          "output.value": "Final Answer: Completed Scenario_2 successfully."
+        }
+      }
+    ]
+  },
+  {
+    "scenario_name": "Scenario_3",
+    "spans": [
+      {
+        "attributes": {
+          "openinference.span.kind": "LLM",
+          "output.value": "Thinking differently about Scenario_3."
+        }
+      },
+      {
+        "attributes": {
+          "openinference.span.kind": "TOOL",
+          "tool.name": "get_order_status",
+          "input.value": "{\"order_id\": \"order_999\"}",
+          "output.value": "Tool success"
+        }
+      },
+      {
+        "attributes": {
+          "openinference.span.kind": "LLM",
+          "output.value": "Final Answer: Completed Scenario_3 successfully."
+        }
+      }
+    ]
+  },
+  {
+    "scenario_name": "Scenario_4",
+    "spans": [
+      {
+        "attributes": {
+          "openinference.span.kind": "LLM",
+          "output.value": "Thinking differently about Scenario_4."
+        }
+      },
+      {
+        "attributes": {
+          "openinference.span.kind": "TOOL",
+          "tool.name": "get_user_info",
+          "input.value": "{\"user_id\": \"user_1\"}",
+          "output.value": "Tool success"
+        }
+      },
+      {
+        "attributes": {
+          "openinference.span.kind": "LLM",
+          "output.value": "Final Answer: Completed Scenario_4 successfully."
+        }
+      }
+    ]
+  },
+  {
+    "scenario_name": "Scenario_5",
+    "spans": [
+      {
+        "attributes": {
+          "openinference.span.kind": "LLM",
+          "output.value": "Thinking differently about Scenario_5."
+        }
+      },
+      {
+        "attributes": {
+          "openinference.span.kind": "TOOL",
+          "tool.name": "get_order_status",
+          "input.value": "{\"order_id\": \"order_999\"}",
+          "output.value": "Tool success"
+        }
+      },
+      {
+        "attributes": {
+          "openinference.span.kind": "LLM",
+          "output.value": "Final Answer: Completed Scenario_5 successfully."
+        }
+      }
+    ]
+  },
+  {
+    "scenario_name": "Scenario_6",
+    "spans": [
+      {
+        "attributes": {
+          "openinference.span.kind": "LLM",
+          "output.value": "Thinking differently about Scenario_6."
+        }
+      },
+      {
+        "attributes": {
+          "openinference.span.kind": "TOOL",
+          "tool.name": "get_user_info",
+          "input.value": "{\"user_id\": \"user_1\"}",
+          "output.value": "Tool success"
+        }
+      },
+      {
+        "attributes": {
+          "openinference.span.kind": "LLM",
+          "output.value": "Final Answer: Completed Scenario_6 successfully."
+        }
+      }
+    ]
+  },
+  {
+    "scenario_name": "Scenario_7",
+    "spans": [
+      {
+        "attributes": {
+          "openinference.span.kind": "LLM",
+          "output.value": "Thinking differently about Scenario_7."
+        }
+      },
+      {
+        "attributes": {
+          "openinference.span.kind": "TOOL",
+          "tool.name": "check_inventory",
+          "input.value": "{\"item_id\": \"item_123\"}",
+          "output.value": "Tool success"
+        }
+      },
+      {
+        "attributes": {
+          "openinference.span.kind": "LLM",
+          "output.value": "Final Answer: Completed Scenario_7 successfully."
+        }
+      }
+    ]
+  },
+  {
+    "scenario_name": "Scenario_8",
+    "spans": [
+      {
+        "attributes": {
+          "openinference.span.kind": "LLM",
+          "output.value": "Thinking differently about Scenario_8."
+        }
+      },
+      {
+        "attributes": {
+          "openinference.span.kind": "TOOL",
+          "tool.name": "get_order_status",
+          "input.value": "{\"order_id\": \"order_999\"}",
+          "output.value": "Tool success"
+        }
+      },
+      {
+        "attributes": {
+          "openinference.span.kind": "LLM",
+          "output.value": "Final Answer: Completed Scenario_8 successfully."
+        }
+      }
+    ]
+  },
+  {
+    "scenario_name": "Scenario_9",
+    "spans": [
+      {
+        "attributes": {
+          "openinference.span.kind": "LLM",
+          "output.value": "Thinking differently about Scenario_9."
+        }
+      },
+      {
+        "attributes": {
+          "openinference.span.kind": "TOOL",
+          "tool.name": "check_inventory",
+          "input.value": "{\"item_id\": \"item_123\"}",
+          "output.value": "Tool success"
+        }
+      },
+      {
+        "attributes": {
+          "openinference.span.kind": "LLM",
+          "output.value": "Final Answer: Completed Scenario_9 successfully."
+        }
+      }
+    ]
+  },
+  {
+    "scenario_name": "Scenario_10",
+    "spans": [
+      {
+        "attributes": {
+          "openinference.span.kind": "LLM",
+          "output.value": "Thinking differently about Scenario_10."
+        }
+      },
+      {
+        "attributes": {
+          "openinference.span.kind": "TOOL",
+          "tool.name": "get_user_info",
+          "input.value": "{\"user_id\": \"user_1\"}",
+          "output.value": "Tool success"
+        }
+      },
+      {
+        "attributes": {
+          "openinference.span.kind": "LLM",
+          "output.value": "Final Answer: Failed Scenario_10."
+        }
+      }
+    ]
+  }
+]
